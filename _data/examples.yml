@@ -1,4 +1,4 @@
 - name: Embed 5 Topics
   args: per-page="5"
-- name: Embed a Category (Support)
+- name: Embed Category
   args: category="6" per-page="5"

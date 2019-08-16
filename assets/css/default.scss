@@ -2,23 +2,26 @@
 ---
 @import "reset.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
 }
 
 .example {
-  padding: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   border-bottom: 1px dashed #ccc;
+  padding: 1em;
 
   h3 {
-    font-size: 1.25em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     font-weight: bold;
   }
 
   d-topics-list {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: block;
 
     iframe {
@@ -28,7 +31,7 @@ body {
 
   code {
 		display: block;
-    margin-top: 1em;
+    margin-top: 1rem;
     background-color: #efefef;
     padding: 0.5em;
     font-family: monospace;
