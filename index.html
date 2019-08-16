@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<div class='example'>
-  <d-topics-list discourse-url="https://meta.discourse.org" per-page="5"></d-topics-list>
-  <code>
-    &lt;d-topics-list discourse-url="https://meta.discourse.org" per-page="5"&gt;&lt;d-topics-list&gt;
-  </code>
-</div>
 
-<script src="https://meta.discourse.org/javascripts/embed-topics.js"></script>
+{% for example in site.data.examples %}
+  <div class='example'>
+    <h3>{{ example.name }}</h3>
+    <code>
+      &lt;d-topics-list discourse-url="https://meta.discourse.org" {{ example.args }}&gt;&lt;d-topics-list&gt;
+    </code>
+    <d-topics-list discourse-url="https://meta.discourse.org" {{ example.args }}></d-topics-list>
+  </div>
+{% endfor %}

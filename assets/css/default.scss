@@ -3,11 +3,22 @@
 @import "reset.scss";
 
 body {
-  margin: 1em;
+  font-family: sans-serif;
 }
 
 .example {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px dashed #ccc;
+
+  h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+
   d-topics-list {
+    margin-top: 1em;
     display: block;
 
     iframe {
